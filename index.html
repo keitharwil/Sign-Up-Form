@@ -7,31 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <main>
         <section class="splash-section">
-            
+            <header>
+                <h1>ARWIL'S BURGERS</h1>
+            </header>
         </section>
-        <section>
-            <h2>Let's do this</h2>
-            <form action="post" >
-                <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name" required />
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" required />
-                    <label for="pasword">PASSWORD</label>
-                    <input type="password" name="password" id="password" required />
-                </div>
-                <div>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name" required />
-                    <label for="number">PHONE NUMBER</label>
-                    <input type="number" name="phone" id="phone" required />
-                    <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-pass" id="confirm-pass" required />
-                </div>
-            </form>
+        <section class="main-fillout-section">
+            <p>
+              This is a "very real" online service! Sign up now to get to see more of
+              the amazing and "very real" service that we've made for you.
+            </p>
+            <div class="fillout-section">
+                <h2>Let's do this</h2>
+                <form action="index.html" method="get" id="form">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required />
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required />
+                        <label for="pasword">PASSWORD</label>
+                        <input type="password" name="password" id="password" required />
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required />
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="number" name="phone" id="phone" required />
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-pass" id="confirm-pass" required />
+                    </div>
+                </form>
+                <button type="submit" form="form" value="submit">Submit</button>
+            </div>
         </section>
-    </div>
+    </main>
 </body>
 </html>
