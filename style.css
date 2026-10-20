@@ -16,7 +16,7 @@
                         calc(16px + (48 - 16) * (100vw - 768px) / (1920 - 768)), /* FLUID CALC */
                         16px  /* MAX */
                     );
-    --font-size-header: clamp(  12px, /* MIN */
+    --font-size-header: clamp(  16px, /* MIN */
                                 calc(16px + (48 - 16) * (100vw - 768px) / (1920 - 768)), /* FLUID CALC */
                                 32px  /* MAX */
                             );
@@ -47,18 +47,25 @@ main {
 
 .splash-section{
     flex: none;
-    width: calc(50vw * 2 / 3);
-    aspect-ratio: 2/3;
+    width: 40vw;
+    aspect-ratio: 2 / 3;
     background-image: url(/img/logo-splash.jpg);
     background-size: cover;
     background-position: center center;
-
 }
 
-h1, h2 {
+h1, 
+h2 {
     margin: 0;
-    font-family: var(--default-fonts);
     font-size: var(--font-size-header);
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    font-family: var(--default-fonts);
 }
 
 p {
@@ -76,4 +83,10 @@ label {
 form {
     display: flex;
     gap: 8px;
+}
+
+span > img {
+    width: auto;
+    height: 16px;
+    margin: 0 4px 0 0;
 }
